@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to World of Workouts</h1>
+    <div>
+      <form action="/submit" method="post">
+        <h2>Log a workout</h2>
+          <input type="text" name="title" placeholder="Title">
+          <textarea type="text" name="body" placeholder="Write Note Here"></textarea>
+          <input type="submit">
+          <!-- <a href="/notes">See your notes!</a> -->
+          <!-- <a href="/user">See your profile!</a> -->
+          <!-- <a href="/populateduser">See your profile, populated with notes!</a> -->
+        </form>
+    </div>
+    <div id="most-recent-container">
+      <h2>Populate with most recent workout</h2>
+    </div>
+    <div id="previously">
+      <h2>Populate with previous workouts</h2>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./../js/script.js"></script>
+  </body>
+</html>
