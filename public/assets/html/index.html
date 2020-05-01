@@ -9,21 +9,22 @@
   <body>
     <h1>Welcome to World of Workouts</h1>
     <div>
-      <form action="/submit" method="post">
+      <form id="log-workout" action="/submit" method="post">
         <h2>Log a workout</h2>
-          <input type="text" name="title" placeholder="Title">
-          <textarea type="text" name="body" placeholder="Write Note Here"></textarea>
+          <input id="name" type="text" name="new-workout" placeholder="Name">
+          <input id="type" type="text" name="new-workout" placeholder="Type">
+          <input id="distance" type="number" name="new-workout" placeholder="Distance">
+          <input id="weight" type="number" name="new-workout" placeholder="Weight">
+          <input id="reps" type="number" name="new-workout" placeholder="Reps">
+          <input id="duration" type="number" name="new-workout" placeholder="duration">
           <input type="submit">
-          <!-- <a href="/notes">See your notes!</a> -->
-          <!-- <a href="/user">See your profile!</a> -->
-          <!-- <a href="/populateduser">See your profile, populated with notes!</a> -->
         </form>
     </div>
     <div id="most-recent-container">
-      <h2>Populate with most recent workout</h2>
+      <h2>Most recent workout</h2>
     </div>
     <div id="previously">
-      <h2>Populate with previous workouts</h2>
+      <h2>Previous workouts</h2>
     </div>
 
     <script
